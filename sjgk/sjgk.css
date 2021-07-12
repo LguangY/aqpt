@@ -1,0 +1,153 @@
+@charset "utf-8";
+/*背景颜色 灰色*/
+body {
+    /*background-image: url(../2.jpg);*/
+    background-color: darkgrey;
+}
+
+/*标题栏 背景图片*/
+#header {
+    background: url(1.jpg);
+    padding: 5px;
+    margin: 6px;
+    text-align: center;
+}
+#main {
+    margin_top: 6px;
+    padding: 10px;
+    background-color: #E2E2E2;
+    width: 100%;
+    //height: 100%;
+}
+
+#ben{
+    font-size: medium;
+    text-align: center;
+    position: relative;
+    margin: 0;
+    top: -12px;
+    left: 10px;
+    width: 70px;
+    background-color: #E2E2E2;
+}
+
+#fen{
+    font-size: medium;
+    text-align: center;
+    position: relative;
+    margin: 0;
+    top: -12px;
+    left: 10px;
+    width: 70px;
+    background-color: #E2E2E2;
+}
+#ti{
+    font-size: medium;
+    text-align: center;
+    position: relative;
+    margin: 0;
+    top: -12px;
+    left: 10px;
+    width: 70px;
+    background-color: #E2E2E2;
+}
+#shuju{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #1b1b1b;
+    width: 645px;
+    margin: 10px;
+    position: relative;
+    top:10px;
+}
+#gaikuang{
+    text-align: center;
+    margin: 10px;
+}
+#leibie{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #1b1b1b;
+    width: 97%;
+    margin: 10px;
+    position: relative;
+    top:20px;
+}
+#lb{
+    text-align: center;
+    margin: 10px;
+}
+.time{
+    position: relative;
+    top: -5px;
+    left: 10px;
+}
+#gettime{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #1b1b1b;
+    width: 97%;
+    margin: 10px;
+}
+#boom{
+
+    position: relative;
+    top: -5px;
+    left: 10px;
+}
+#kaohe{
+    position: relative;
+    margin-top: -18px;
+    margin-left:15px;
+}
+#gettime span{
+    position: relative;
+    top: -4px;
+    left: 2px;
+}
+#lev_b{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #1b1b1b;
+    width: 634px;
+    height: 214px;
+    position: relative;
+    margin-top: -230px;
+    left: 665px;
+    top: 16px;
+}
+#jb{
+    font-size: medium;
+    text-align: center;
+    position: relative;
+    margin: 0;
+    top: -12px;
+    left: 10px;
+    width: 70px;
+    background-color: #E2E2E2;
+}
+#level_b{
+    position: absolute;
+    left:113px;
+    top:6px;
+}
+#level_l{
+    list-style: none;
+    position: absolute;
+    margin-top: -1px;
+    top:70px;
+    left:364px;
+}
+#level_l li p{
+    position: absolute;
+    left: 15px;
+    margin-top: 4px;
+    width: 20px;
+    height: 11px;
+}
+#lev_bm{
+    position: absolute;
+    top: 30px;
+    left: 375px;
+    width: 155px;
+}

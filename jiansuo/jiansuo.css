@@ -1,0 +1,56 @@
+@charset "utf-8";
+body {
+    /*background-image: url(../2.jpg);*/
+    /*background-size: cover;*/
+    /*background-repeat: no-repeat;*/
+    background-color: darkgrey;
+}
+
+#header {
+    background: url(1.jpg);
+    padding: 5px;
+    margin: 6px;
+    text-align: center;
+}
+
+#middle {
+    background-color: #FFF;
+    padding: 10px;
+    margin: 6px;
+}
+
+#table {
+    background-color: #FFF;
+    padding: 10px;
+    margin: 6px;
+}
+
+#list{
+    margin: 0 auto;
+}
+
+.xing {
+    color: #F00;
+}
+
+.shuru {
+    height: 200px;
+    width: 1000px;
+    resize: none;
+}
+
+.anniu {
+    width: 100px;
+}
+
+.left {
+    margin-left: 70px;
+    margin-bottom: 10px;
+}
+
+select {
+    width: 150px;
+}
+
+/* CSS Document */
+

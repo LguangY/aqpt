@@ -1,0 +1,125 @@
+<html>
+<head>
+    <title>问题录入界面</title>
+    <meta charset="utf-8">
+    <!--JS代码-->
+    <script src="../JQuery.js"></script>
+    <script src="../jquery.cookie.js"></script>
+    <script src="luru.js"></script>
+    <!--CSS文件-->
+    <link href="luru1.0.css" rel="stylesheet" type="text/css"/>
+    <head>
+<body>
+<!--标题块-->
+<div id="header">
+    <h1> 安全问题管理平台-问题录入 </h1>
+</div>
+<!--内容录入块-->
+<div id="middle" align="center">
+    <iframe name="aja" id = "aja" style="display:none" ></iframe>
+    <form name="luru" id="luru" action="keep.php" method="post" target="aja" >
+        <input type="text" name="name" style="display:none" id="aaaa"/>
+        <input type="text" name="team" style="display:none" id="bbbb"/>
+        <!--采用表格布局-->
+        <table width="1200" border="0">
+            <tr>
+                <!--问题类型选择栏-->
+                <td width="200">问题来源<span class="red">*</span><br>
+				<selec·t name="source" id="source" required>
+                        <option value="" disabled selected hidden>请选择</option>
+                        <option value="现场">现场</option>
+                        <option value="添乘">添乘</option>
+                        <option value="音频">音频</option>
+                        <option value="视频">视频</option>
+                        <option value="LKJ">LKJ</option>
+                        <option value="责任行车概况">责任行车概况</option>
+                        <option value="段发通知书">段发通知书</option>
+                        <option value="通知书">通知书</option>
+                        <option value="退勤报">退勤报</option>
+                        <option value="其它">其它 </option>
+                    </selec·t>
+                    </td>
+                <!--问题来源选择栏-->
+                <td width="200">问题类别<span class="red">*</span><br>
+				<select name="cut" id="cut" required>
+                        <option value="" disabled selected hidden>请选择</option>
+                        <option value="劳动安全">劳动安全</option>
+                        <option value="LKJ操作">LKJ操作</option>
+                        <option value="呼唤应答">呼唤应答</option>
+                        <option value="机能试验">机能试验</option>
+                        <option value="四核対">四核対</option>
+                        <option value="连挂状态">连挂状态</option>
+                        <option value="假设活">假设活</option>
+                        <option value="制动机使用">制动机使用</option>
+                        <option value="过分相操作">过分相操作</option>
+                        <option value="操纵控速">操纵控速</option>
+                        <option value="调车安全">调车安全</option>
+                        <option value="值乘精力">值乘精力</option>
+                        <option value="瞭望确认">瞭望确认</option>
+                        <option value="车机联控">车机联控</option>
+                        <option value="出退勤管理">出退勤管理</option>
+                        <option value="两纪管理">两纪管理</option>
+                        <option value="作业标准">作业标准</option>
+                        <option value="安全管理">安全管理</option>
+                        <option value="防溜安全">防溜安全</option>
+                        <option value="防汛安全">防汛安全</option>
+                        <option value="单身宿舍">单身宿舍</option>
+                        <option value="白色通知书">白色通知书</option>
+                        <option value="意见建议征集">意见建议征集</option>
+                        <option value="好人好事">好人好事</option>
+                        <option value="其他">其他</option>
+                    </select>
+                    </td>
+                <!--责任人输入栏-->
+                <td width="200">责任人<span class="red">*</span><br>
+                    <input type="text" name="blame[]" placeholder="请输入" id="blame" class="bla" required>
+                    <input type="button" class="add" id="add1" value="+">
+                </td>
+                <!--工号输入栏-->
+                <td width="200">固编号<span class="red">*</span><br>
+                    <input type="text" name="bla_num[]" placeholder="请输入" id="bla_num" class="num" required>
+                    <input type="button" class="add" id="add2" value="+">
+                </td>
+                <!--问题级别选择栏-->
+                <td width="200">问题级别<span class="red">*</span><br>
+                    <select name="level" id="level" required>
+                        <option value="" disabled selected hidden>请选择</option>
+                        <option value="特严">特严</option>
+                        <option value="严违">严违</option>
+                        <option value="一般">一般</option>
+                        <option value="违标1">违标1</option>
+                        <option value="违标2">违标2</option>
+                        <option value="无">无</option>
+                    </select></td>
+                <!--考核输入栏-->
+                <td width="200">考核<br>
+                    <input type="text" name="check" placeholder="请输入" id="check"></td>
+            </tr>
+            <!--排版换行-->
+            <tr>
+                <!--问题描述输入栏-->
+                <td colspan="3" >问题描述<span class="red">*</span><br>
+                    <div id = muban >
+                    <textarea class="input" name="describe[]" id="describe" placeholder="请输入" required></textarea>
+                    </div>
+                </td>
+                <td colspan="2">整改措施<br>
+                    <textarea class="input" name="step" id="step" placeholder="请输入"></textarea>
+                </td>
+                <!--提交 重置按钮 保存按钮将表单提交至指导司机表格中-->
+                <td><input class="anniu" name="keep" type="submit" id="keep" value="保存">
+                    <br>
+                    <input class="anniu" name="reset" type="reset" id="reset" value="重置"></td>
+            </tr>
+        </table>
+    </form>
+</div>
+<!--信息显示栏-->
+<div id="table">
+    <!--点击后将表单提交至总表-->
+    <input name="submit" type="button" id="submit" value="提报已选中问题">
+    <div id="list">
+    </div>
+</div>
+</body>
+</html>

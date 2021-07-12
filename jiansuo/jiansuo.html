@@ -1,0 +1,168 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>问题检索界面</title>
+    <!--CSS文件-->
+    <link href="jiansuo.css" rel="stylesheet" type="text/css"/>
+
+    <link href="bootstrap-datetimepicker-master/css/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css"/>
+    <link href="bootstrap-datetimepicker-master/sample%20in%20bootstrap%20v3/bootstrap/css/bootstrap.min.css"
+          rel="stylesheet" type="text/css"/>
+    <!--JS代码-->
+    <script src="../JQuery.js"></script>
+    <script src="../jquery.cookie.js"></script>
+    <script src="../jquery.table2excel.js"></script>
+    <script src="jiansuo.js"></script>
+    <script src="fuxuan.js"></script>
+
+    <!--    <script src="bootstrap-datetimepicker-master/sample%20in%20bootstrap%20v3/jquery/jquery-1.8.3.min.js"></script>-->
+    <script src="bootstrap-datetimepicker-master/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="bootstrap-datetimepicker-master/sample%20in%20bootstrap%20v3/bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+</head>
+<body>
+<div id="header">
+    <h1> 安全问题管理平台-问题检索 </h1>
+</div>
+<div id="middle" align="center">
+    <form name="jiansuo" id="jiansuo">
+        <table width="1200" height="66" border="0" id="ces">
+            <tr valign="middle">
+                <!--录入部门选择栏-->
+                <td width="200">录入部门<br>
+                    <select name="class" id="class">
+                        <option value="">请选择</option>
+                        <option value="车间">车间</option>
+                        <option value="东一">东一</option>
+                        <option value="东二">东二</option>
+                        <option value="瓦日">瓦日</option>
+                        <option value="内勤">内勤</option>
+                        <option value="安质室">安质室</option>
+                    </select></td>
+                <!--录入班组选择栏-->
+                <td width="200">录入班组<br>
+                    <select name="team" id="team">
+                        <option value="">请选择</option>
+                        <option value="车队长">车队长</option>
+                        <option value="车队书记">车队书记</option>
+                        <option value="第01指导组">第01指导组</option>
+                        <option value="第02指导组">第02指导组</option>
+                        <option value="第03指导组">第03指导组</option>
+                        <option value="第04指导组">第04指导组</option>
+                        <option value="第05指导组">第05指导组</option>
+                        <option value="第06指导组">第06指导组</option>
+                        <option value="第07指导组">第07指导组</option>
+                        <option value="第08指导组">第08指导组</option>
+                        <option value="第09指导组">第09指导组</option>
+                        <option value="第10指导组">第10指导组</option>
+                        <option value="第11指导组">第11指导组</option>
+                        <option value="第12指导组">第12指导组</option>
+                        <option value="第13指导组">第13指导组</option>
+                        <option value="第14指导组">第14指导组</option>
+                        <option value="第15指导组">第15指导组</option>
+                        <option value="第16指导组">第16指导组</option>
+                        <option value="第17指导组">第17指导组</option>
+                        <option value="第18指导组">第18指导组</option>
+                        <option value="第19指导组">第19指导组</option>
+                        <option value="内勤班组">内勤班组</option>
+                    </select></td>
+                <!--提报人输入栏-->
+                <td width="200">提报人<br>
+                    <input type="text" name="name" placeholder="请输入" id="name"></td>
+                <!--问题类型选择栏-->
+                <td width="200">问题类别<br>
+                    <select name="cut" id="cut" multip>
+                        <option value="">请选择</option>
+                        <option value="劳动安全">劳动安全</option>
+                        <option value="LKJ操作">LKJ操作</option>
+                        <option value="呼唤应答">呼唤应答</option>
+                        <option value="机能试验">机能试验</option>
+                        <option value="四核対">四核対</option>
+                        <option value="连挂状态">连挂状态</option>
+                        <option value="假设活">假设活</option>
+                        <option value="制动机使用">制动机使用</option>
+                        <option value="过分相操作">过分相操作</option>
+                        <option value="操纵控速">操纵控速</option>
+                        <option value="调车安全">调车安全</option>
+                        <option value="值乘精力">值乘精力</option>
+                        <option value="瞭望确认">瞭望确认</option>
+                        <option value="车机联控">车机联控</option>
+                        <option value="出退勤管理">出退勤管理</option>
+                        <option value="两纪管理">两纪管理</option>
+                        <option value="作业标准">作业标准</option>
+                        <option value="安全管理">安全管理</option>
+                        <option value="防溜安全">防溜安全</option>
+                        <option value="防汛安全">防汛安全</option>
+                        <option value="单身宿舍">单身宿舍</option>
+                        <option value="白色通知书">白色通知书</option>
+                        <option value="意见建议征集">意见建议征集</option>
+                        <option value="好人好事">好人好事</option>
+                        <option value="其他">其他</option>
+                    </select></td>
+                <td width="200">
+                    <br>
+                    <input class="anniu" type="button" id="retrieval" value="检索">
+                </td>
+            </tr>
+            <tr valign="middle">
+                <!--问题来源选择栏-->
+                <td width="200">问题来源<br>
+                    <select name="source" id="source">
+                        <option value="" style="color:#CCC">请选择</option>
+                        <option value="现场">现场</option>
+                        <option value="添乘">添乘</option>
+                        <option value="音频">音频</option>
+                        <option value="视频">视频</option>
+                        <option value="LKJ">LKJ</option>
+                        <option value="责任行车概况">责任行车概况</option>
+                        <option value="段发通知书">段发通知书</option>
+                        <option value="通知书">通知书</option>
+                        <option value="退勤报">退勤报</option>
+                        <option value="其他">其他</option>
+                    </select></td>
+                <!--问题级别选择栏-->
+                <td width="200">问题级别<br>
+                    <select name="level" id="level">
+                        <option value="">请选择</option>
+                        <option value="特严">特严</option>
+                        <option value="严违">严违</option>
+                        <option value="一般">一般</option>
+                        <option value="违标1">违标1</option>
+                        <option value="违标2">违标2</option>
+                        <option value="无">无</option>
+                    </select></td>
+                <td colspan="2"> 提报日期<br>
+                    <input type="text" name="qishi" id="qishi" class="time" readonly value="">
+                    ~
+                    <input type="text" name="jieshu" id="jieshu" class="time" readonly value="">
+
+                <td>
+                    <br>
+                    <input class="anniu" name="button" type="submit" id="reset" value="重置"></td>
+            </tr>
+            <tr valign="middle">
+                <!--责任人输入栏-->
+                <td width="200">责任人<br>
+                    <input type="text" name="blame" placeholder="请输入" id="blame" class="bla">
+                </td>
+                <!--工号输入栏-->
+                <td width="200">固编号<br>
+                    <input type="text" name="bla_num" placeholder="请输入" id="bla_num" class="num">
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+<div id="table">
+    <form>
+        <input class="left" name="export" type=button id="export" value="导出当前表格">
+        <table border="2" id='list'></table>
+    </form>
+</div>
+</body>
+</html>
+<script>
+    selectMultip.register();
+    //动态渲染
+    selectMultip.reload("cut", data);
+</script>

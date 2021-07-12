@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>运用安全平台</title>
+
+    <link rel="stylesheet" type="text/css" href="left-side-menu.css">
+    <link rel="stylesheet" type="text/css" href="iconfont.css">
+    <link rel="stylesheet" type="text/css" href="shouye.css">
+
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.slimscroll.min.js"></script>
+    <script type="text/javascript" src="left-side-menu.js"></script>
+    <script type="text/javascript" src="shouye.js"></script>
+    <script type="text/javascript" src="../jquery.cookie.js"></script>
+
+</head>
+<body>
+<!--标题-->
+<div class="top">
+    <h1>安全问题管理平台</h1>
+</div>
+<!--主要内容-->
+<div class="main">
+    <div class="header">
+        <p class="sum"> 欢迎您</p>
+    </div>
+    <div id = "shuju">
+        <p id="ben">本日概况</p>
+        <table id = "gaikuang" border="1" >
+            <tr>
+                <th>部门/来源</th><th>现场</th><th>添乘</th><th>音频</th><th>视频</th><th>LKJ</th><th>责任行车概况</th><th>段发通知书</th><th>通知书</th><th>退勤报</th><th>其他</th>
+            </tr>
+            <tr>
+                <td>车间</td>
+            </tr>
+            <tr>
+                <td class="zk">东一</td>
+            </tr>
+            <tr>
+                <td class="zk">东二</td>
+            </tr>
+            <tr>
+                <td class="zk">瓦日</td>
+            </tr>
+            <tr>
+                <td>内勤</td>
+            </tr>
+            <tr>
+                <td>安质室</td>
+            </tr>
+        </table>
+        <ul id="level_l">
+            <li><p></p>无：<a class="lev_b"></a></li>
+            <li><p></p>违标2：<a class="lev_b"></a></li>
+            <li><p></p>违标1：<a class="lev_b"></a></li>
+            <li><p></p>一般违：<a class="lev_b"></a></li>
+            <li><p></p>严违：<a class="lev_b"></a></li>
+            <li><p></p>特严：<a class="lev_b"></a></li>
+        </ul>
+        <canvas id="level_b" width="210px" height="210px"></canvas>
+    </div>
+</div>
+</div>
+<!--标签-->
+<div class="left-side-menu">
+    <div class="lsm-expand-btn">
+        <div class="lsm-mini-btn">
+            <label>
+                <input type="checkbox" checked="checked">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="30"/>
+                    <path class="line--1" d="M0 40h62c18 0 18-20-17 5L31 55"/>
+                    <path class="line--2" d="M0 50h80"/>
+                    <path class="line--3" d="M0 60h62c18 0 18 20-17-5L31 45"/>
+                </svg>
+            </label>
+
+        </div>
+        <!--        <input type="text">-->
+
+    </div>
+    <div class="lsm-container">
+        <div class="lsm-scroll">
+            <div class="lsm-sidebar">
+                <ul>
+                    <li class="lsm-sidebar-item">
+                        <a href="javascript:;"><i class="my-icon lsm-sidebar-icon icon-users"></i><span>问题库</span><i class="my-icon lsm-sidebar-more"></i></a>
+                        <ul>
+                            <li><a href="../luru/luru.html" target="_blank"><span>问题录入</span></a></li>
+                            <li><a href="../jiansuo/jiansuo.html" target="_blank"><span>问题检索</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="lsm-sidebar-item">
+                        <a href="javascript:;"><i class="my-icon lsm-sidebar-icon icon-users"></i><span>数据管理</span><i class="my-icon lsm-sidebar-more"></i></a>
+                        <ul>
+                            <li><a href="../sjgk/sjgk.html" target="_blank"><span>数据概况</span></a></li>
+                            <li><a href="" target="_blank"><span>表格导出</span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    background-image: url("1.jpg");
+    background-size: 100%;
+}
+
+.login {
+    width: 600px;
+    height: 370px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.logo {
+    height: 80px;
+    width: 600px;
+    text-align: center;
+    font-size: 27px;
+    font-family: 楷体;
+}
+.main-back{
+    height: 250px;
+    width: 600px;
+    background-image: url("2.jpg");
+    border-radius: 20px 20px 0
+}
+.main {
+    height: 250px;
+    width: 270px;
+    float: right;
+    font-size: 23px;
+    font-family: 华文行楷;
+}
+.main p{
+    color: dimgray;
+}
+.username{
+    margin: 30px 0px 20px 0px ;
+}
+
+.butt {
+    height: 40px;
+    width: 600px;
+    position: absolute;
+    top: 330px;
+}
+
+.butt input{
+    height: 40px;
+    width: 600px;
+    background-color: dimgray;
+    border-radius: 0 0 20px 20px;
+    font-size: 17px;
+}
+
+.main input {
+    border-radius: 7px;
+    height: 40px;
+    width: 240px;
+    margin-top: 6px;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>安全管理平台</title>
+    <link type="text/css" href="denglu/denglu.css" rel="stylesheet"/>
+    <script src="JQuery.js"></script>
+    <script src="jquery.cookie.js"></script>
+    <script src="denglu/denglu.js"></script>
+</head>
+<body>
+<div class="login">
+    <div class="logo">
+        <h1>安全问题管理平台</h1>
+    </div>
+    <div class="main-back">
+        <div class="main">
+            <form id="data">
+                <div class="username">
+                    <p>用户名：</p>
+                    <input type="text" name="username" value="请输入用户名" id="name"
+                           onfocus="if (value=='请输入用户名'){value=''} "
+                           onblur="if (value==''){value='请输入用户名'} ">
+                </div>
+                <div class="password">
+                    <p>密码：</p>
+                    <input type="password" name="password" value="      " id="pass"
+                           onfocus="if (value=='      '){value=''} "
+                           onblur="if (value==''){value='      '} ">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="butt">
+        <input type="button" value="登   录" id="tj"/>
+    </div>
+</div>
+</body>
+</html>

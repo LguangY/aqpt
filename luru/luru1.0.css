@@ -1,0 +1,104 @@
+@charset "utf-8";
+/*背景颜色 灰色*/
+body {
+    /*background-image: url(../2.jpg);*/
+    background-color: darkgrey;
+}
+
+/*标题栏 背景图片*/
+#header {
+    background: url(1.jpg);
+    padding: 5px;
+    margin: 6px;
+    text-align: center;
+}
+
+/*录入栏*/
+#middle {
+    background-color: #FFF;
+    padding: 10px;
+    margin: 6px;
+}
+
+/*显示栏*/
+#table {
+    background-color: #FFF;
+    padding: 10px;
+    margin: 6px;
+}
+
+/*红色星号*/
+.red {
+    color: #F00;
+}
+
+/*问题描述输入栏大小设置 禁止改动大小*/
+.input {
+    height: 200px;
+    width: 440px;
+    resize: none;
+}
+/**/
+
+/*提交和按钮大小设置*/
+.anniu {
+    width: 100px;
+    margin: 30px;
+}
+
+/*显示栏按钮的排版*/
+#submit{
+    margin-left: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    margin: auto;
+}
+/*下划线输入栏*/
+#muban {
+    border: 1px solid;
+    height: 200px;
+    width: 440px;
+
+}
+#muban input{
+    border-left-width:0px;
+    border-top-width:0px;
+    border-right-width:0px;
+    border-bottom-color:black;
+}
+#muban .input{
+    border-left-width:0px;
+    border-top-width:0px;
+    border-right-width:0px;
+    border-bottom-width:0px;
+    width: 438px;
+    height: 198px;
+    resize: none;
+}
+#muban .tc{
+    border-left-width:0px;
+    border-top-width:0px;
+    border-right-width:0px;
+    border-bottom-width:0px;
+    width: 438px;
+    height: 128px;
+    resize: none;
+}
+/*下拉菜单大小设置*/
+select {
+    width: 150px;
+}
+
+#step {
+    float: right;
+}
+
+#list{
+    margin-left: 5px;
+}
+
+#zg {
+    margin-left: 443px;
+}
+
+/* CSS Document */
